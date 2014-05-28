@@ -1,0 +1,14 @@
+.container
+  .new-product
+  %table.table.table-bordered.table-striped
+    %thead
+      %tr
+        %th Name
+        %th Last name
+        %th Email
+        %th Phone number
+        %th Address
+        %th City
+        %th{colspan:'2'} Created at
+    %tbody.product-index= render "index"
+#product-modal.modal.fade

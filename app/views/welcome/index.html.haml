@@ -1,0 +1,49 @@
+.container
+  %h1 test
+  .row
+    .col-lg-1.col-xs-2
+      #slider
+    .col-lg-11.col-xs-10
+      #simulation
+        Sed posuere consectetur est at lobortis. Donec ullamcorper
+        %span#span1 0
+        nulla non metus auctor fringilla. Maecenas sed diam eget risus varius
+        %span#span2 0
+        blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper.
+
+
+%hr
+=form_for @client, remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f|
+  .aaaa
+    %ul.errors
+
+    .control-group
+      = f.label :first_name, class:"control-label"
+      .controls
+        = f.text_field :first_name
+    .control-group
+      = f.label :last_name, class: "control-label"
+      .controls
+        = f.text_field :last_name
+    .control-group
+      = f.label :email, class: "control-label"
+      .controls
+        = f.text_field :email
+    .control-group
+      = f.label :phone_number, class: "control-label"
+      .controls
+        = f.text_field :phone_number
+    .control-group
+      = f.label :address, class: "control-label"
+      .controls
+        = f.text_field :address
+    .control-group
+      = f.label :city, class: "control-label"
+      .controls
+        = f.text_field :city
+
+
+  .footer
+    = f.submit class: "btn btn-primary"
+
+

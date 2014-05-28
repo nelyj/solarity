@@ -1,0 +1,11 @@
+-@clients.each do |client|
+  %tr
+    %td=client.first_name
+    %td=client.last_name
+    %td=client.email
+    %td=client.phone_number
+    %td=client.address
+    %td=client.city
+    %td=client.created_at
+    %td= link_to "Delete", client_path(client), method:'delete' ,class: "btn btn-danger"
+

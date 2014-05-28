@@ -1,0 +1,16 @@
+=form_for @client, remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f|
+  .modal-body
+    %ul.errors
+
+    .control-group
+      = f.label :first_name, class:"control-label"
+      .controls
+        = f.text_field :first_name
+    .control-group
+      = f.label :last_name, class: "control-label"
+      .controls
+        = f.text_field :last_name
+
+  .modal-footer
+    = f.submit class: "btn btn-primary"
+    = link_to "Cancel", "#", class: "btn", data: {dismiss: "modal"}
