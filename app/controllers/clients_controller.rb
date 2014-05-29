@@ -3,6 +3,21 @@ class ClientsController < ApplicationController
 
   def index
     @clients = Client.all
+
+    #generate excel file with results
+    Axlsx::Package.new do |p|
+      p.workbook.add_worksheet(:name => "Clients_subscription") do |sheet|
+        sheet.add_row ["Name", "Last name ", "Email", "Phone number", "Address", "City", "Created at"]
+        Client.all.each do |c|
+          sheet.add_row [c.first_name, c.last_name, c.email, c.phone_number, c.address, c.city, c.created_at.in_time_zone('Santiago').strftime('%d/%m/%Y - %H:%M:%S')]
+        end
+      end
+
+      p.serialize('simple.xlsx')
+    end
+
+
+
   end
 
   def new

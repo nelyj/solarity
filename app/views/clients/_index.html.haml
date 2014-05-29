@@ -6,6 +6,6 @@
     %td=client.phone_number
     %td=client.address
     %td=client.city
-    %td=client.created_at
+    %td=client.created_at.in_time_zone('Santiago').strftime('%d/%m/%Y - %H:%M:%S')
     %td= link_to "Delete", client_path(client), method:'delete' ,class: "btn btn-danger"
 
