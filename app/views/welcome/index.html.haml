@@ -1,3 +1,24 @@
+.navbar.navbar-inverse.navbar-fixed-top{role: "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: "#"} Solarity
+
+
+.jumbotron
+  .bodyContent
+    .container
+      aaaa
+  .footerContent
+    .container
+      bbbbb
+
+
+
 .container
   %h1 test
   .row
@@ -13,37 +34,45 @@
 
 
 %hr
-=form_for @client, remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f|
-  .aaaa
-    %ul.errors
+.container
+  =form_for @client, remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f|
+    .aaaa
+      %ul.errors
 
-    .control-group
-      = f.label :first_name, class:"control-label"
-      .controls
-        = f.text_field :first_name
-    .control-group
-      = f.label :last_name, class: "control-label"
-      .controls
-        = f.text_field :last_name
-    .control-group
-      = f.label :email, class: "control-label"
-      .controls
-        = f.text_field :email
-    .control-group
-      = f.label :phone_number, class: "control-label"
-      .controls
-        = f.text_field :phone_number
-    .control-group
-      = f.label :address, class: "control-label"
-      .controls
-        = f.text_field :address
-    .control-group
-      = f.label :city, class: "control-label"
-      .controls
-        = f.text_field :city
+      .control-group
+        = f.label :first_name, class:"control-label"
+        .controls
+          = f.text_field :first_name
+      .control-group
+        = f.label :last_name, class: "control-label"
+        .controls
+          = f.text_field :last_name
+      .control-group
+        = f.label :email, class: "control-label"
+        .controls
+          = f.text_field :email
+      .control-group
+        = f.label :phone_number, class: "control-label"
+        .controls
+          = f.text_field :phone_number
+      .control-group
+        = f.label :address, class: "control-label"
+        .controls
+          = f.text_field :address
+      .control-group
+        = f.label :city, class: "control-label"
+        .controls
+          = f.text_field :city
+    .footer
+      = f.submit class: "btn btn-primary"
 
 
-  .footer
-    = f.submit class: "btn btn-primary"
+.bigFooter
+  .bodyContent
+    .container
+      aaaa
+  .footerContent
+    .container
+      bbbbb
 
 

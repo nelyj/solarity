@@ -18,6 +18,36 @@
  *= require_tree .
  */
 
+.jumbotron, .bigFooter {
+  background-repeat: no-repeat;
+  background-position: center center;
+  //background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbotron {
+  height: 740px;
+  margin-top: 50px;
+  position: relative;
+  background-image: image-url('bgCta.jpg');
+
+  .bodyContent{
+
+  }
+
+  .footerContent{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 -30px;
+    bottom: 0;
+    height: 145px;
+  }
+}
+
 #slider, #simulation {
   height: 200px;
 }
@@ -26,6 +56,25 @@
 #simulation {
   font-size: 25px;
   @media (max-width: 767px) { font-size: 17px; }
+}
+
+.bigFooter {
+  height: 810px;
+  background-image: image-url('bgFooter.jpg');
+  position: relative;
+
+ .bodyContent{
+
+  }
+
+  .footerContent{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    //margin: 0 -30px;
+    bottom: 0;
+    height: 145px;
+  }
 }
 
 
