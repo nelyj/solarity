@@ -42,6 +42,7 @@ $(document).ready(function() {
     slide: function(){
      $('#span1').html($("#slider").val());
      $('#span2').html($("#slider").val()*5);
+     $('#infoSlider').css('top',(($("#slider").val()*2)-13)+'px');
     },
   });
 

@@ -1,70 +1,110 @@
 .navbar.navbar-inverse.navbar-fixed-top{role: "navigation"}
   .container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{href: "#"} Solarity
+    .row
+      .col-lg-7
+        =image_tag "iconMap.png"
+        %span Av. Vitacura 3568 - Of 411    |   Santiago, Chile
+        =image_tag "iconPhone.png"
+        %span +56 2 222 7825
+      .col-lg-5
+        .pull-right
+          %a{href:"#"}
+            %i.fa.fa-skype
+          %a{href:"#"}
+            %i.fa.fa-youtube
+          %a{href:"#"}
+            %i.fa.fa-twitter
+          %a{href:"#"}
+            %i.fa.fa-facebook-square
 
 
 .jumbotron
   .bodyContent
+    .header
+      .navbar.navbar-default{role: "navigation"}
+        .container
+          .navbar-header
+            %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            %a.navbar-brand{href: "#"}
+              =image_tag "logo.png", class:'logo'
+          .navbar-collapse.collapse
+            %ul.nav.navbar-nav.navbar-right
+              %li.active
+                %a{href: "./"} Para su hogar
+              %li
+                %a{href: "../navbar-static-top/"} Para empresas
+              %li
+                %a{href: "../navbar-fixed-top/"} ¿Porque Solarity?
+              %li
+                %a{href: "../navbar-fixed-top/"} Cotización
+
     .container
-      aaaa
+      .row.cta
+        .col-lg-12
+          %h1 Energía solar para su<br>empresa u hogar
+
   .footerContent
     .container
-      bbbbb
+      .col-lg-4
+        %a.btn.btn-black-trans{href:'#'}
+          %i.fa.fa-file-text
+          Cotize gratis con Solarity
+      .col-lg-8
+        %p
+          %i.fa.fa-chevron-circle-left
+          Atenderemos su requerimiento o inquietud sin ningún compromiso.
 
+.container.main
+  .col-lg-6
+    %h1 ¿Crees que la energía<br>solar es cara?
+    %p
+      Con Solarity ya no es necesario que pagues por paneles solares, paga solo por la energía.
+    %p
+      La energía solar de hecho puede ser más barata que lo que pagas hoy, además de ser predecible y fija en tarifas. Los ahorros pueden ser incluso millones de pesos.
+    %p
+      Gracias a Solarity ya no necesitas millones para comprar un sistema de paneles solares, solo necesitas un buen techo, porque la instalación, ahora es gratis.
+    %hr
+    %h1 ¿Te interesa?
+    %p Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
+    =image_tag "arrow.png", class:'pull-right'
+  .col-lg-6
+    .graphAndRegister
+      .header
+        ¿Cuanto pagas en electricidad?
+        .pull-right
+          %a.btn.btn-black Industrial
+          %a.btn.btn-link Residencial
+      .simulation
+        .col-lg-6
+          #slider
+          #infoSlider
+            Vehicula
+            %span#span1
+            Egestas
+            %span#span2
+        .col-lg-6
+          .info
+            Mientras más gastas más te podemos ayudar a ahorrar
+      .register
+        =form_for @client, remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f|
+          .fields
+            =image_tag "logoGray.png", class:'vaMiddle'
+            =image_tag "envelope.png", class:'pull-right'
+            %ul.errors
+            = f.text_field :first_name, class:"form-control", placeholder:"Nombre y Apellidos"
+            .row
+              .col-lg-6
+                = f.text_field :email, class:"form-control", placeholder:"Email"
+              .col-lg-6
+                = f.text_field :phone_number, class:"form-control", placeholder:"Teléfono"
+            = f.text_field :address, class:"form-control", placeholder:"Dirección"
 
-
-.container
-  %h1 test
-  .row
-    .col-lg-1.col-xs-2
-      #slider
-    .col-lg-11.col-xs-10
-      #simulation
-        Sed posuere consectetur est at lobortis. Donec ullamcorper
-        %span#span1 0
-        nulla non metus auctor fringilla. Maecenas sed diam eget risus varius
-        %span#span2 0
-        blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper.
-
-
-%hr
-.container
-  =form_for @client, remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f|
-    .aaaa
-      %ul.errors
-
-      .control-group
-        = f.label :first_name, class:"control-label"
-        .controls
-          = f.text_field :first_name
-      .control-group
-        = f.label :last_name, class: "control-label"
-        .controls
-          = f.text_field :last_name
-      .control-group
-        = f.label :email, class: "control-label"
-        .controls
-          = f.text_field :email
-      .control-group
-        = f.label :phone_number, class: "control-label"
-        .controls
-          = f.text_field :phone_number
-      .control-group
-        = f.label :address, class: "control-label"
-        .controls
-          = f.text_field :address
-      .control-group
-        = f.label :city, class: "control-label"
-        .controls
-          = f.text_field :city
-    .footer
-      = f.submit class: "btn btn-primary"
+          .footerActions
+            = f.submit "Enviar", class: "btn btn-primary pull-right"
 
 
 .bigFooter
