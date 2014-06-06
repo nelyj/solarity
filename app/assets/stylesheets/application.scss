@@ -160,12 +160,13 @@ body, html {
       color:#FFF;
       top:-15px;
       font-size: 14px;
+      border-color:rgba(0,0,0,0.50);
       &:before{
         content: ' ';
         height: 0;
         width: 0;
         border: 10px solid transparent;
-        border-right-color: rgba(0,0,0,0.50);
+        border-right-color: inherit;
         position: absolute;
         left: -20px;
       }
@@ -252,16 +253,34 @@ body, html {
   position: relative;
 
  .bodyContent{
+    color:#FFF;
+    h1 {
+       padding:50px 0;
+    }
+    h3{
 
+    }
   }
 
   .footerContent{
     position: absolute;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
-    //margin: 0 -30px;
     bottom: 0;
     height: 145px;
+
+    .navbar{
+      border: none;
+      min-height: 100px;
+      margin-top: 50px;
+      background-color: transparent;
+      color:#414243;
+
+      img.logo {
+        position: relative;
+        top: -13px;
+      }
+    }
   }
 }
 

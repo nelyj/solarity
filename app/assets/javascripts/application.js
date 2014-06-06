@@ -42,8 +42,25 @@ $(document).ready(function() {
     slide: function(){
      $('#span1').html($("#slider").val());
      $('#span2').html($("#slider").val()*5);
+     var colorLabel=(Math.floor($("#slider").val()/3))*8;
+     var colorLabel='rgba('+colorLabel+',255,0,0.5)';
+     $('#infoSlider').css('background-color',colorLabel);
+     $('#infoSlider').css('border-color',colorLabel);
      $('#infoSlider').css('top',(($("#slider").val()*2)-13)+'px');
     },
+  });
+
+
+  $("#home").click(function () {
+    $('.simulation').css("background-image","url('/assets/bgHome.png')");
+    $(this).toggleClass('btn-link btn-black');
+     $('#enterprise').toggleClass('btn-black btn-link');
+  });
+
+  $("#enterprise").click(function () {
+    $('.simulation').css("background-image","url('/assets/bgEnterprise.png')");
+    $(this).toggleClass('btn-link btn-black');
+     $('#home').toggleClass('btn-black btn-link');
   });
 
 });

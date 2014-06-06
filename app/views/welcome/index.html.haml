@@ -76,8 +76,8 @@
       .header
         ¿Cuanto pagas en electricidad?
         .pull-right
-          %a.btn.btn-black Industrial
-          %a.btn.btn-link Residencial
+          %a#enterprise.btn.btn-black Industrial
+          %a#home.btn.btn-link Residencial
       .simulation
         .col-lg-6
           #slider
@@ -110,9 +110,35 @@
 .bigFooter
   .bodyContent
     .container
-      aaaa
+      .col-lg-6
+        %h1 ¿Por que Solarity?
+        %h3 ¡Porque lo hacemos muy simple!
+        %p Tu experiencia con nuestro servicio es nuestra prioridad, desde el primer día nuestro equipo se encargará de todo, la instalación puede tomar tan poco como un día y podrás empezar a disfrutar de energía limpia y más barata.
+      .col-lg-6 &nbsp;
   .footerContent
-    .container
-      bbbbb
+    .navbar.navbar-default{role: "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "#"}
+            =image_tag "logoWhite.png", class:'logo'
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li.active
+              %a{href: "./"} Para su hogar
+            %li
+              %a{href: "../navbar-static-top/"} Para empresas
+            %li
+              %a{href: "../navbar-fixed-top/"} Cotize gratis con Solarity
+            %li
+              %a{href: "../navbar-fixed-top/"} Términos y Condiciones
+
+
+
+
 
 
