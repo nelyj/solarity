@@ -42,10 +42,12 @@ $(document).ready(function() {
     slide: function(){
      $('#span1').html($("#slider").val());
      $('#span2').html($("#slider").val()*5);
-     var colorLabel=(Math.floor($("#slider").val()/3))*8;
-     var colorLabel='rgba('+colorLabel+',255,0,0.5)';
+
+     var colorLabel='hsla('+$("#slider").val()+',50%,45%,1)';
+     var borderColorHandle='hsla('+$("#slider").val()+',50%,38%,0.8)';
      $('#infoSlider').css('background-color',colorLabel);
      $('#infoSlider').css('border-color',colorLabel);
+     $('.noUi-handle').css('background-color',colorLabel).css('border-color', borderColorHandle);
      $('#infoSlider').css('top',(($("#slider").val()*2)-13)+'px');
     },
   });
