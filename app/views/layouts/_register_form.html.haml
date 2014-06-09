@@ -1,0 +1,33 @@
+.graphAndRegister
+  .header
+    ¿Cuanto pagas en electricidad?
+    .pull-right
+      %a#enterprise.btn.btn-black Industrial
+      %a#home.btn.btn-link Residencial
+  .simulation
+    .col-lg-6
+      #slider
+      #infoSlider
+        Vehicula
+        %span#span1
+        Egestas
+        %span#span2
+    .col-lg-6
+      .info
+        Mientras más gastas más te podemos ayudar a ahorrar
+  .register
+    =form_for @client, remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f|
+      .fields
+        =image_tag "logoGray.png", class:'vaMiddle'
+        =image_tag "envelope.png", class:'pull-right'
+        %ul.errors
+        = f.text_field :first_name, class:"form-control", placeholder:"Nombre y Apellidos"
+        .row
+          .col-lg-6
+            = f.text_field :email, class:"form-control", placeholder:"Email"
+          .col-lg-6
+            = f.text_field :phone_number, class:"form-control", placeholder:"Teléfono"
+        = f.text_field :address, class:"form-control", placeholder:"Dirección"
+
+      .footerActions
+        = f.submit "Enviar", class: "btn btn-primary pull-right"

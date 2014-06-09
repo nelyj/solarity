@@ -1,0 +1,44 @@
+=render 'layouts/header'
+.middletron
+  .header
+    .container
+      =render 'layouts/main_menu'
+  .wrapper
+    .container
+      %h1 Industrias y gobierno
+
+.container.main.intPages
+  .col-lg-6
+    %h1.first Ahorro
+    %p Con el acuerdo de compra de energía solar (PPA) que tenemos, permite a tu negocio cambiarse a solar sin inversión alguna e idealmente poder ahorrar dinero desde el día de la instalación.
+
+    %p Nosotros instalamos y mantenemos los equipos solares en tu techo. Con nuestro modelo de PPA tu empresa solo paga por la energía solar que produces.
+
+    %p.bold Reducir costos de operación desde el primer día
+
+    %p Desde el momento en que tu negocio empiece a producir energía solar PV, tu cuenta de electricidad va a bajar considerablemente. La combinación del PPA que nos haces a nosotros y la reducción en la cuenta de electricidad es normalmente menor a lo que pagas hoy. Además, como se espera que las tarifas eléctricas sigan subiendo, tu ahorro irá en aumento.
+
+    %p.bold Potenciales subsidios a la generación ERNC
+
+    %p En caso de existir en el futuro algún incentivo del gobierno a las energías limpias. Cuando esto pase ayudaremos a tu organización para, que en caso de ser posible, se vea beneficiado por estos incentivos.
+
+    %p.bold Precios competitivos asegurados
+
+    %p Tenemos un acuerdo de colaboración con Kaltemp única empresa chilena que instaló y opera una plata solar PV en el norte de Chile. Esto asegura instalación de alta calidad y bajos precios de equipos. Lo que nos permite traspasar esos bajos costos a nuestros clientes.
+
+    %p.bold Monitoreo permanente y en tiempo real
+
+    %p Nuestras instalaciones permiten que tengas control sobre la producción y el consumo eléctrico que tu organización tiene. No solo no tienes que preocuparte por la inversion, instalación y manutención. Si no que ademas ponemos a tu disposición este sistema que permite que maximices tu producción y ahorro de energía. Como Solarity es el dueño de los equipos, si algo pasa, nosotros lo resolveremos lo antes posible.
+
+
+    <br>
+    %p.bold.midWidth Contáctanos para una cotización y para obtener información adicional de como opera
+    =image_tag "arrow.png", class:'pull-right mgTop70'
+
+
+  .col-lg-6.intPages
+    =render 'layouts/register_form'
+
+.footerContent.intPages
+  =render 'layouts/footer_menu'
+
