@@ -1,26 +1,35 @@
 class WelcomeController < ApplicationController
+  before_filter :empty_client
+
   def index
-    @client = Client.new
   end
 
   def ahorro
-    @client = Client.new
   end
 
   def productos
-    @client = Client.new
   end
 
   def industrias
-    @client = Client.new
   end
 
   def clientes
-    @client = Client.new
   end
 
   def residencial
-    @client = Client.new
   end
+
+  def residencial_como_funciona
+  end
+
+  def testimonios
+  end
+
+  private
+    def empty_client
+      @client = Client.new
+    end
+
+
 
 end

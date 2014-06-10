@@ -1,0 +1,52 @@
+=render 'layouts/header'
+.middletron
+  .header
+    .container
+      =render 'layouts/main_menu'
+  .wrapper
+    .container
+      %h1 Para su hogar
+
+.container.main.intPages
+  .col-lg-6
+    %h1.first ¿Cómo funciona un sistema solar residencial?
+    %p Estos son los elementos que toda instalación solar PV requiere para proveer a tu hogar de energía limpia proveniente del sol.
+
+    %p.bold Paneles solares:
+
+    %p Se instalan en el techo o en una estructura cercana a la fuente de consumo. Los paneles son construidos en base a celdas fotovoltaicas (PV) celdas que convierten la energía del sol en corriente continua.
+
+    %p.bold Inversor solar:
+
+    %p El inversor solar es el encargado de tranformar la corriente continua en corriente alterna, que es la que utilizan tanto casas como empresas.
+
+    %p.bold Panel eléctrico:
+
+    %p Una vez que la electricidad es transformada en corriente alterna por el inversor, está se desplaza al panel eléctrico existente en el lugar. Es en este punto donde la energía generada por el panel solar esta disponible para ser utilizada.
+
+    %p.bold Medidor:
+
+    %p El medidor pertenece a la distribuidora eléctrica de tu ciudad. A partir de ahora este medidor, literalmente ira hacia ambos lados, acumulando saldo a favor de tu empresa cuando se este inyectando electricidad al sistema, lo que se vera reflejado en el menor valor de tu próxima boleta.
+
+    %p Es importante aclarar que tu edificio permanecerá conectado al distribuidor permanentemente en caso de que el sistema solar PV no sea capaz de generar toda la demanda de energía que tu empresa tiene en un momento determinado, como por ejemplo durante la noche, cuando el panel no está generando.
+
+    %p.bold Monitor Solar:
+
+    %p La instalación incluye un monitor permanente de la energía que el sistema solar PV genera. Solarity constantemente mide tu generación y consumo. Asi podrás manejar de manera los consumos, reduciendo costos de operación.
+
+    %p.bold Ahorro más allá de lo solar:
+
+    %p Nos asociamos con nuestros amigos de Efizity, así constantemente monitoreamos el consumo de electricidad. Teniendo claro tu comportamiento de consumo es más fácil identificar y manejarlo, permitiéndole a tu empresa ahorrar dinero.
+
+    <br>
+    %p.bold.midWidth Contáctanos para una cotización y para obtener información adicional de como opera
+    =image_tag "arrow.png", class:'pull-right mgTop70'
+
+
+  .col-lg-6.intPages
+    =image_tag "temp.png", class:'fullWidth'
+    =render 'layouts/register_form'
+
+.footerContent.intPages
+  =render 'layouts/footer_menu'
+
