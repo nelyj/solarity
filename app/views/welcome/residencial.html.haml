@@ -1,0 +1,29 @@
+=render 'layouts/header'
+.middletron
+  .header
+    .container
+      =render 'layouts/main_menu'
+  .wrapper
+    .container
+      %h1 Para su hogar
+
+.container.main.intPages
+  .col-lg-6
+    %h1.first Energía solar para tu casa
+
+    %p Solo pagas por la energía solar mensual, igual que hoy, solo que más barato
+
+    %p Paga menos por electricidad hoy y tus ahorros pueden crecer a lo largo del tiempo debido a que las tarifas eléctricas seguirán creciendo. Solarity instalará tu sistema solar gratis, si un día de sol entrega toda la energía que consume el país en un año, por que no ocuparla?. Se parte de esta revolución sumando energía limpia y más barata a tu casa.
+
+    <br>
+    %h1 ¿Te interesa?
+    %p.bold.midWidth Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
+    =image_tag "arrow.png", class:'pull-right mgTop70'
+
+
+  .col-lg-6.intPages
+    =render 'layouts/register_form'
+
+.footerContent.intPages
+  =render 'layouts/footer_menu'
+

@@ -36,13 +36,6 @@
       \- Directora de procesos KFC Chile
 
 
-
-
-    <br>
-    %p.bold.midWidth Contáctanos para una cotización y para obtener información adicional de como opera
-    =image_tag "arrow.png", class:'pull-right mgTop70'
-
-
   .col-lg-6.intPages
     %h4 Videos
     .row.videos
@@ -72,6 +65,28 @@
     %h4 Galería de instalaciones
     %p Explore la gran cantidad de espacios en los que hemos logrado desarrollar soluciones inteligentes y eficientes, ¿preocupado por su caso particular? las siguientes imágenes son instalaciones reales hechas por nuestros profesionales en todo Chile.
 
+    .gallery
+      .row
+        =image_tag "gal_1.png"
+        =image_tag "gal_2.png"
+        =image_tag "gal_3.png"
+        =image_tag "gal_4.png"
+        =image_tag "gal_5.png"
+      .row
+        =image_tag "gal_6.png"
+        =image_tag "gal_7.png"
+        =image_tag "gal_8.png"
+        =image_tag "gal_9.png"
+        =image_tag "gal_10.png"
+
+.container.bigRegister
+  .row
+    .col-lg-6
+      %h1 ¿Te interesa?
+      %p.midWidth Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
+      =image_tag "arrow.png", class:'pull-right mgTop70'
+    .col-lg-6
+      =render "layouts/just_register_form"
 
 .footerContent.intPages
   =render 'layouts/footer_menu'

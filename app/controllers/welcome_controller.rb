@@ -19,4 +19,8 @@ class WelcomeController < ApplicationController
     @client = Client.new
   end
 
+  def residencial
+    @client = Client.new
+  end
+
 end
