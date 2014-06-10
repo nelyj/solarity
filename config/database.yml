@@ -6,7 +6,6 @@ defaults: &defaults
   database: solarity
   username: jlizana
   password:
-  template: template0
 
 development: *defaults
 production: *defaults
