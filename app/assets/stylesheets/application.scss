@@ -103,7 +103,9 @@ body, html {
             margin-right: 0;
           }
         }
+
       }
+
     }
   }
 
@@ -405,6 +407,20 @@ body, html {
             margin-right: 0;
           }
         }
+
+
+        ul.dropdown-menu{
+          li{
+            a{
+              margin: 0 !important;
+              border-left: 3px solid transparent;
+              &:hover {
+                border-left: 3px solid #F15929;
+              }
+            }
+          }
+        }
+
       }
     }
   }
@@ -471,7 +487,37 @@ body, html {
 
     a{
       color:#FFF;
+
+      &.dropdown-toggle{
+        padding: 15px;
+        line-height: 20px;
+
+        &:hover {
+          color:#3F3F43;
+        }
+      }
     }
+
+    .btn-group{
+      padding-top: 14px;
+    }
+
+    ul.dropdown-menu{
+      border-radius: 0;
+      box-shadow: 0 0px 12px rgba(0, 0, 0, 0.175);
+
+      li{
+        a{
+          color:#3F3F43;
+          margin: 0 !important;
+          border-left: 3px solid transparent;
+          &:hover {
+            border-left: 3px solid #F15929;
+          }
+        }
+      }
+    }
+
   }
 }
 
