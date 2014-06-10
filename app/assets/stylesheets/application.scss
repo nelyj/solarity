@@ -21,11 +21,19 @@
 body, html {
   font-family: 'Open Sans', sans-serif !important;
   font-size: 16px !important;
-  color:#3F4043 !important;
+  color:#3F3F43 !important;
   font-weight: 400;
 
   .bold{
     font-weight: 600;
+  }
+
+  .italic{
+    font-style: italic;
+  }
+
+  img.fullWidth{
+    width: 100%;
   }
 }
 
@@ -43,7 +51,7 @@ body, html {
   }
 }
 
-.jumbotron,.middletron, .bigFooter {
+.jumbotron,.middletron, .bigFooter, .footerContent.intPages {
   background-repeat: no-repeat;
   background-position: center center;
   //background-attachment: fixed;
@@ -426,10 +434,10 @@ body, html {
 
 .footerContent.intPages{
   background-image: image-url('bgFooter.jpg');
-  //background-color: rgba(0,0,0,0.5);
   margin: 0 -30px;
+  margin-top: 30px;
   bottom: 0;
-  height: 145px;
+  height: 165px;
   color:#FFF;
 
   .btn-black-trans,p{
@@ -440,7 +448,31 @@ body, html {
   }
 
   .navbar {
-    background: transparent;
+    padding-top: 57px;
+    padding-bottom: 58px;
+    background: rgba(0,0,0,0.7);
     border: none;
+
+    img.logo {
+      position: relative;
+      margin-top: -13px;
+    }
+
+    a{
+      color:#FFF;
+    }
+  }
+}
+
+
+.row.videos {
+  margin-bottom: 30px;
+
+  p {
+    font-size: 14px;
+
+    &.bold {
+      margin: 5px 0 10px;
+    }
   }
 }
