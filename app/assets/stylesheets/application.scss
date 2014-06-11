@@ -123,6 +123,7 @@ body, html {
       min-height: 100px;
       background-color: transparent;
       color:#414243;
+      z-index: 1;
 
       .container {
         margin-top: 25px;
@@ -179,6 +180,31 @@ body, html {
         text-align: right;
       }
     }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 270px;
+      left: 0;
+
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(255,255,255,1)),
+        color-stop(1, rgba(255,255,255,0))
+      );
+      background-image: -o-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+      background-image: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+      background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+      background-image: -ms-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+      background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+
+    }
+
   }
 
   .footerContent{
@@ -639,3 +665,17 @@ body, html {
   }
 }
 
+
+.navbar{
+  .container {
+    .row {
+      margin-left: 15px;
+      margin-right: 15px;
+
+      div[class^="col-lg"]{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
