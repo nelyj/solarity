@@ -132,6 +132,12 @@ body, html {
           margin-top: -15px;
         }
 
+        li.dropdown.open{
+          a.dropdown-toggle{
+            background-color: rgba(255,255,255,0.9);
+          }
+        }
+
         a {
           color: inherit;
           margin:0 38px;
@@ -143,6 +149,11 @@ body, html {
           &:last-of-type{
             margin-right: 0;
           }
+
+          &.dropdown-toggle:hover, &:hover{
+            background-color: rgba(255,255,255,0.9);
+          }
+
         }
 
 
@@ -294,7 +305,8 @@ body, html {
 }
 
 .bigRegister {
-  margin-top: 95px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: #F5F5F5;
 
   h1 {
@@ -396,12 +408,19 @@ body, html {
 
       a {
         color:#fff;
+        text-decoration: none;
+
+        &:hover {
+          background-color: rgba(255,255,255,0.9);
+          color:#3F3F43;
+        }
 
         &.dropdown-toggle{
           padding: 15px;
           line-height: 20px;
 
           &:hover {
+            background-color: rgba(255,255,255,0.9);
             color:#3F3F43;
           }
         }
@@ -493,10 +512,12 @@ body, html {
   background-image: image-url('bgFooter.jpg');
   height: 270px;
   margin-top: 52px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 0;
 
   .header{
-    margin-left: -30px;
-    margin-right: -30px;
+
     background-color: rgba(255,255,255,0.7);
 
     .navbar{
@@ -572,6 +593,9 @@ body, html {
 
   .col-lg-6.intPages{
     padding-top: 90px;
+    .graphAndRegister{
+      margin-bottom: 30px;
+    }
   }
 
 }
@@ -605,14 +629,22 @@ body, html {
 
     a{
       color:#FFF;
+      text-decoration: none;
+
+      &:hover {
+        background-color: rgba(255,255,255,0.9);
+        color:#3F3F43;
+      }
 
       &.dropdown-toggle{
         padding: 15px;
         line-height: 20px;
 
         &:hover {
+          background-color: rgba(255,255,255,0.9);
           color:#3F3F43;
         }
+
       }
     }
 

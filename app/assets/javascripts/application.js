@@ -17,7 +17,7 @@
 //= require jquery.nouislider.min
 //= require_tree .
 
-$(document).ready(function() {
+$(document).on('ready page:load', function () {
 
     //definicion tramos
     var strJSONTramosResindencial = '[ \
