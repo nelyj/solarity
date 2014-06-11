@@ -379,10 +379,17 @@ body, html {
             color:#3F3F43;
           }
         }
+
       }
 
       .btn-group{
         padding-top: 14px;
+        &.dropup.open {
+          a {
+            color:#3F3F43 !important;
+            text-decoration: none;
+          }
+        }
       }
 
       ul.dropdown-menu{
@@ -400,7 +407,6 @@ body, html {
           }
         }
       }
-
     }
   }
 }
