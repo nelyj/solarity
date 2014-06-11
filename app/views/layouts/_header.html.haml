@@ -1,12 +1,20 @@
 .navbar.navbar-inverse.navbar-fixed-top{role: "navigation"}
   .container
     .row
-      .col-lg-7
-        =image_tag "iconMap.png"
-        %span Av. Vitacura 3568 - Of 411    |   Santiago, Chile
-        =image_tag "iconPhone.png"
-        %span +56 2 222 7825
-      .col-lg-5
+      .col-lg-9
+        %span.contact
+          =image_tag "iconMap.png"
+          Av. Vitacura 3568 - Of 411 | Santiago, Chile
+
+        %span.contact
+          =image_tag "iconPhone.png"
+          +56 2 222 7825
+
+        %a#registerLink{href: "#register_form"}
+          %i.fa.fa-file-text
+          Cotize gratis con Solarity
+
+      .col-lg-3
         .pull-right
           %a{href:"http://www.skype.com/en/"}
             %i.fa.fa-skype

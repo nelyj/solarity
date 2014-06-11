@@ -40,11 +40,23 @@ body, html {
     display: inline-block;
     width: 70%;
   }
+
 }
 
 .navbar-fixed-top{
   line-height: 50px;
   color: #FFF;
+
+  span.contact{
+    &:first-of-type {
+      margin-right: 40px;
+    }
+
+    img {
+      margin-right: 7px;
+    }
+  }
+
   a {
     font-size: 20px;
     margin-left: 25px;
@@ -53,6 +65,33 @@ body, html {
     &:hover {
       color:#F15929;
       text-decoration: none;
+    }
+
+    &#registerLink{
+      margin-left: 40px;
+      font-size: 16px;
+      opacity:0;
+      transition:opacity 0.5s linear;
+      cursor: default;
+
+      i{
+        color: #F15929;
+        font-size: 21px;
+        position: relative;
+        top: 3px;
+        margin-right: 7px;
+      }
+
+      &.visible{
+        display: inline-block;
+        opacity:1;
+        -webkit-transition: opacity 2s ease;
+        -moz-transition: opacity 2s ease;
+        -ms-transition: opacity 2s ease;
+        -o-transition: opacity 2s ease;
+        cursor: pointer;
+      }
+
     }
   }
 }
@@ -577,3 +616,4 @@ body, html {
     }
   }
 }
+

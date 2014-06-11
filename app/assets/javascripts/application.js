@@ -59,11 +59,30 @@ $(document).ready(function() {
      $('#enterprise').toggleClass('btn-black btn-link');
   });
 
+
   $("#enterprise").click(function () {
     $('.simulation').css("background-image","url('/assets/bgEnterprise.png')");
     $(this).toggleClass('btn-link btn-black');
      $('#home').toggleClass('btn-black btn-link');
   });
 
+
+  simpleScrollSpy(710);
+
 });
+
+
+
+
+function simpleScrollSpy(positionY){
+  $(window).scroll(function(){
+
+    if  ($(window).scrollTop() >= positionY){
+      $('#registerLink').addClass('visible');
+    }else {
+      $('#registerLink').removeClass('visible');
+    }
+
+  });
+}
 
