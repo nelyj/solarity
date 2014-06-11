@@ -144,6 +144,22 @@ body, html {
           }
         }
 
+
+        ul.dropdown-menu{
+          border-radius: 0;
+          li{
+            a{
+              margin: 0 !important;
+              border-left: 3px solid transparent;
+              &:hover {
+                border-left: 3px solid #F15929;
+              }
+            }
+          }
+        }
+
+
+
       }
 
     }
