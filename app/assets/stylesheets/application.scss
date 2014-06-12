@@ -711,3 +711,15 @@ body, html {
     }
   }
 }
+
+.popover {
+  background-color: rgb(170, 170, 170) !important;
+  border: none;
+  color: #FFF;
+  font-style: italic;
+  .arrow {
+    &:after {
+      border-left-color: rgb(170, 170, 170) !important;
+    }
+  }
+}

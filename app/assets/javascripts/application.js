@@ -78,6 +78,13 @@ $(document).on('ready page:load', function () {
      updateInfoSlider();
   });
 
+
+  $('#registerBtn').on('shown.bs.popover', function() {
+    setTimeout(function() {
+        $('#registerBtn').popover('hide');
+    }, 3000);
+  });
+
   //Initialize
   updateInfoSlider();
   simpleScrollSpy(710);
