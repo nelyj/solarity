@@ -62,7 +62,7 @@ $(document).on('ready page:load', function () {
 
 
   $("#home").click(function () {
-    $('.simulation').css("background-image","url('/assets/bgHome.png')");
+    $('.simulation').removeClass('bgIndustry').addClass('bgHome');
     $(this).toggleClass('btn-link btn-black');
      $('#enterprise').toggleClass('btn-black btn-link');
      jsonTramos = JSON.parse(strJSONTramosResindencial);
@@ -71,7 +71,7 @@ $(document).on('ready page:load', function () {
 
 
   $("#enterprise").click(function () {
-    $('.simulation').css("background-image","url('/assets/bgEnterprise.png')");
+    $('.simulation').removeClass('bgHome').addClass('bgIndustry');
     $(this).toggleClass('btn-link btn-black');
      $('#home').toggleClass('btn-black btn-link');
      jsonTramos = JSON.parse(strJSONTramosIndustrial);

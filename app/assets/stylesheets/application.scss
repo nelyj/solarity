@@ -291,7 +291,7 @@ body, html {
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
       height: 250px;
       padding: 22px;
-      background-image: image-url('bgEnterprise.png');
+      //background-image: image-url('bgEnterprise.png');
       background-repeat: no-repeat;
       background-position: 32px;
       @media (max-width: 767px) { font-size: 17px; }
@@ -728,4 +728,12 @@ body, html {
       border-left-color: rgb(170, 170, 170) !important;
     }
   }
+}
+
+
+.bgHome{
+  background-image: image-url('bgHome.png');
+}
+.bgIndustry{
+  background-image: image-url('bgEnterprise.png');
 }
