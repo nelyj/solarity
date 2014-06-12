@@ -274,6 +274,7 @@ body, html {
       top:-15px;
       font-size: 14px;
       border-color:rgba(0,0,0,0.50);
+      white-space: nowrap;
       &:before{
         content: ' ';
         height: 0;
@@ -296,8 +297,12 @@ body, html {
       @media (max-width: 767px) { font-size: 17px; }
 
       .info{
-        font-size: 25px;
-        padding: 30px 0;
+        display: table-cell;
+        vertical-align: middle;
+        height: 200px;
+        font-size: 20px;
+        max-width: 200px;
+        color: #494646;
       }
     }
 
@@ -584,7 +589,8 @@ body, html {
   }
 
   p.bold {
-    margin: 30px 0;
+    //margin: 30px 0;
+    margin: 45px 0 12px;
   }
 
   img.mgTop70 {
@@ -685,7 +691,7 @@ body, html {
 }
 
 .gallery{
-  margin-top:20px;
+  margin-top:35px;
   .row{
     margin-left: 0; margin-right: 0;
     img {
