@@ -401,8 +401,9 @@ body, html {
 
     .navbar{
       border: none;
-      min-height: 100px;
+      min-height: 95px;
       margin-top: 50px;
+      margin-bottom: 0;
       background-color: transparent;
       color:#414243;
 
@@ -514,7 +515,6 @@ body, html {
 
 
 .middletron {
-  background-image: image-url('bgFooter.jpg');
   height: 270px;
   margin-top: 52px;
   margin-left: -30px;
@@ -625,6 +625,7 @@ body, html {
   .navbar {
     padding-top: 57px;
     padding-bottom: 58px;
+    margin-bottom: 0;
     background: rgba(0,0,0,0.7);
     border: none;
 
@@ -736,4 +737,10 @@ body, html {
 }
 .bgIndustry{
   background-image: image-url('bgEnterprise.png');
+}
+.mtHome{
+  background-image: image-url('mt_home.jpg');
+}
+.mtIndustry{
+  background-image: image-url('mt_industry.jpg');
 }
