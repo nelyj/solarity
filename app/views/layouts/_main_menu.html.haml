@@ -7,21 +7,10 @@
         %span.icon-bar
         %span.icon-bar
       =link_to root_path, :class => 'navbar-brand' do
-        =image_tag "logo.png", class:'logo hidden-xs hidden-lg'
-        =image_tag "logoWhite.png", class:'logo xs-80'
+        =image_tag "logo.png", class:'logo hidden-xs'
+        =image_tag "logoWhite.png", class:'logo xs-80 hidden-lg'
     .navbar-collapse.collapse
       %ul.nav.navbar-nav.navbar-right
-        %li.dropdown
-          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-            Para su hogar
-            %span.caret
-          %ul.dropdown-menu
-            %li
-              =link_to "Energía solar para tu casa", residencial_path
-            %li
-              =link_to "¿Cómo funciona?", residencial_como_funciona_path
-            %li
-              =link_to "Testimonios", testimonios_path
         %li.dropdown
           %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
             Industrias y Gobierno
@@ -35,7 +24,19 @@
               =link_to "¿Cómo funciona?", industrias_path
             %li
               =link_to "Clientes", clientes_path
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            Para su hogar
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              =link_to "Energía solar para tu casa", residencial_path
+            %li
+              =link_to "¿Cómo funciona?", residencial_como_funciona_path
+            %li
+              =link_to "Testimonios", testimonios_path
+
         %li
-          %a{href: "#"} ¿Porque Solarity?
+          %a{href: "/#why"} ¿Porque Solarity?
         %li
-          %a{href: "#register_form"} Cotización
+          %a{href: "#register_form"} Cotiza con nosotros

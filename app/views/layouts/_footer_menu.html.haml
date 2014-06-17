@@ -13,18 +13,6 @@
         %li
           .btn-group.dropup
             %a.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
-              %span Para su hogar
-              %span.caret
-            %ul.dropdown-menu
-              %li
-                =link_to "Energía solar para tu casa", residencial_path
-              %li
-                =link_to "¿Cómo funciona?", residencial_como_funciona_path
-              %li
-                =link_to "Testimonios", testimonios_path
-        %li
-          .btn-group.dropup
-            %a.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
               %span Industrias y Gobierno
               %span.caret
             %ul.dropdown-menu
@@ -36,6 +24,20 @@
                 =link_to "¿Cómo funciona?", industrias_path
               %li
                 =link_to "Clientes", clientes_path
+
+        %li
+          .btn-group.dropup
+            %a.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+              %span Para su hogar
+              %span.caret
+            %ul.dropdown-menu
+              %li
+                =link_to "Energía solar para tu casa", residencial_path
+              %li
+                =link_to "¿Cómo funciona?", residencial_como_funciona_path
+              %li
+                =link_to "Testimonios", testimonios_path
+
         %li
           %a{href: "#register_form"} Cotize gratis con Solarity
         %li

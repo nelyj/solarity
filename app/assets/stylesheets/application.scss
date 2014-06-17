@@ -767,6 +767,11 @@ body, html {
 
     .graphAndRegister{
       margin-bottom: 30px;
+      @media(max-width:767px){
+        //margin-bottom: 300px;
+      }
+
+
     }
   }
 
@@ -1048,5 +1053,45 @@ body, html {
 .popover-content{
   @media(max-width:767px){
     width: 120px;
+  }
+}
+
+.intPages{
+  .footerMobile{
+    .navbar {
+      margin-top: 30px;
+    }
+  }
+}
+
+.footerMobile{
+  text-align: center;
+  .navbar {
+    background-color: rgba(34, 34, 34, 0.88);
+    border:none;
+    margin-top: -230px;
+    height: 230px;
+    margin-bottom: 0;
+    padding: 10px 0;
+  }
+
+  a#registerLink, span.contact{
+    color:#FFF;
+    display: block;
+    line-height: 35px;
+  }
+
+  a#registerLink{
+    background-color: #F15929;
+    color:#FFF;
+    margin:10px 0 20px;
+  }
+
+  .social {
+    a {
+      color:#F15929;
+      padding: 0 8px;
+      font-size: 30px;
+    }
   }
 }
