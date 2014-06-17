@@ -10,11 +10,19 @@
 
   .footerContent
     .container
-      .col-lg-4
-        %a.btn.btn-black-trans{href:'#register_form'}
+      .col-lg-4.col-xs-12
+
+        %a.btn.btn-black-trans.hidden-xs{href:'#register_form'}
           %i.fa.fa-file-text
           Cotize gratis con Solarity
-      .col-lg-8
+
+        %a.btn.btn-black-trans.hidden-lg{href:'#register_form'}
+          %i.fa.fa-file-text
+          Cotize gratis
+
+
+
+      .col-lg-8.hidden-xs
         %p
           %i.fa.fa-chevron-circle-left
           Atenderemos su requerimiento o inquietud sin ningún compromiso.
@@ -31,8 +39,8 @@
     %hr
     %h1 ¿Te interesa?
     %p Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
-    =image_tag "arrow.png", class:'pull-right'
-  .col-lg-6
+    =image_tag "arrow.png", class:'pull-right hidden-xs'
+  .col-lg-6.regAndSim
     =render 'layouts/register_form'
 
 
@@ -44,7 +52,7 @@
         %h3 ¡Porque lo hacemos muy simple!
         %p Tu experiencia con nuestro servicio es nuestra prioridad, desde el primer día nuestro equipo se encargará de todo, la instalación puede tomar tan poco como un día y podrás empezar a disfrutar de energía limpia y más barata.
       .col-lg-6 &nbsp;
-  .footerContent
+  .footerContent.hidden-xs
     =render 'layouts/footer_menu'
 
 

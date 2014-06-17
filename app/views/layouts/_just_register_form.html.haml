@@ -1,8 +1,8 @@
 #register_form.register
   =form_for @client, remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f|
     .fields
-      =image_tag "logoGray.png", class:'vaMiddle'
-      =image_tag "envelope.png", class:'pull-right'
+      =image_tag "logoGray.png", class:'vaMiddle xs-mid'
+      =image_tag "envelope.png", class:'pull-right xs-mid'
       %ul.errors
       = f.text_field :first_name, class:"form-control", placeholder:"Nombre y Apellidos"
       .row

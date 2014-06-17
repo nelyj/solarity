@@ -92,8 +92,6 @@ $(document).on('ready page:load', function () {
 });
 
 
-
-
 function simpleScrollSpy(positionY){
   $(window).scroll(function(){
 
@@ -102,6 +100,22 @@ function simpleScrollSpy(positionY){
     }else {
       $('#registerLink').removeClass('visible');
     }
+
+
+    /*
+    var mq = window.matchMedia( "(max-width: 767px)" );
+    if (mq.matches) {
+      if  ($(window).scrollTop() >= 320){
+        $('.jumbotron .footerContent').addClass('fixedOnTop');
+      }else {
+        $('.jumbotron .footerContent').removeClass('fixedOnTop');
+      }
+    }*/
+
+
+
+
+
 
   });
 }

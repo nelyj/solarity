@@ -1,13 +1,17 @@
 .graphAndRegister
   .header
-    ¿Cuanto pagas en electricidad?
-    .pull-right
-      %a#enterprise.btn.btn-black Industrial
-      %a#home.btn.btn-link Residencial
+    .row
+      .col-lg-7.col-xs-12
+        ¿Cuanto pagas en electricidad?
+      .col-lg-2.col-xs-6
+        %a#enterprise.btn.btn-black Industrial
+      .col-lg-2.col-xs-6
+        %a#home.btn.btn-link Residencial
+
   .simulation.bgIndustry
-    .col-lg-6
+    .col-lg-6.col-xs-12
       #slider
       #infoSlider
-    .col-lg-6
+    .col-lg-6.col-xs-12.forTip
       .info#tip
   =render "layouts/just_register_form"

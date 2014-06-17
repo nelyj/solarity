@@ -47,6 +47,10 @@ body, html {
   line-height: 50px;
   color: #FFF;
 
+  @media(max-width:767px){
+    display: none;
+  }
+
   span.contact{
     &:first-of-type {
       margin-right: 40px;
@@ -55,6 +59,7 @@ body, html {
     img {
       margin-right: 7px;
     }
+
   }
 
   a {
@@ -112,10 +117,23 @@ body, html {
   position: relative;
   background-image: image-url('bgCta.jpg');
 
+  @media(max-width:767px){
+    height: 400px;
+    padding: 0;
+    margin:0;
+  }
+
   .header{
     margin-left: -30px;
     margin-right: -30px;
     margin-top: -48px;
+
+    @media(max-width:767px){
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.83);
+    }
 
     .navbar{
       border-radius: 0;
@@ -125,6 +143,47 @@ body, html {
       color:#414243;
       z-index: 1;
 
+      @media(max-width:767px){
+        min-height: 77px;
+        margin-bottom: 0px;
+      }
+
+      .navbar-header {
+        @media(max-width:767px){
+          border-bottom: 2px solid #000000;
+        }
+      }
+
+      .navbar-collapse{
+        @media(max-width:767px){
+          padding-left: 0;
+          padding-right: 0;
+        }
+        ul.nav {
+          @media(max-width:767px){
+            margin:0 !important;
+          }
+          li{
+            a {
+              @media(max-width:767px){
+                margin-left: 0 !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+              }
+            }
+
+            &.dropdown.open{
+              a {
+                background-color: #FFF !important;
+              }
+            }
+          }
+
+        }
+      }
+
+
+
       .container {
         margin-top: 25px;
 
@@ -132,9 +191,15 @@ body, html {
           margin-top: -15px;
         }
 
-        li.dropdown.open{
-          a.dropdown-toggle{
-            background-color: rgba(255,255,255,0.9);
+        li {
+          @media(max-width:767px){
+            background-color: rgba(255, 255, 255, 0.48);
+          }
+
+          &.dropdown.open{
+            a.dropdown-toggle{
+              background-color: rgba(255,255,255,0.9);
+            }
           }
         }
 
@@ -182,6 +247,15 @@ body, html {
       .row.cta {
         position: relative;
         top: 300px;
+
+        @media(max-width:767px){
+          position: absolute;
+          margin-left: 0px;
+          margin-right: 0px;
+          width: 100%;
+          left: 0;
+          top: 210px;
+        }
       }
 
       h1 {
@@ -189,6 +263,11 @@ body, html {
         font-size: 56px;
         text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
         text-align: right;
+
+        @media(max-width:767px){
+          font-size: 25px;
+        }
+
       }
     }
 
@@ -218,7 +297,7 @@ body, html {
 
   }
 
-  .footerContent{
+  .footerContent {
     position: absolute;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
@@ -227,8 +306,37 @@ body, html {
     height: 145px;
     color:#FFF;
 
+    @media(max-width:767px){
+      height: 145px;
+      background-color: transparent;
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(0,0,0,0)),
+        color-stop(1, rgba(0,0,0,0.7))
+      );
+      background-image: -o-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+      background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+      background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+      background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    }
+
+    .container {
+      @media(max-width:767px){
+        padding: 0;
+      }
+    }
+
     .btn-black-trans,p{
       margin-top: 34px;
+
+      @media(max-width:767px){
+        position: absolute;
+        top: 61px;
+        right: 0px;
+      }
     }
     p {
       line-height: 75px;
@@ -239,11 +347,19 @@ body, html {
 .container.main, .container.bigRegister{
   H1 {
     padding-bottom: 50px;
+
+    @media(max-width:767px){
+      padding-bottom: 25px;
+    }
   }
 
   hr {
     margin: 55px 0 45px;
     border-top-style: dotted;
+
+    @media(max-width:767px){
+      margin: 25px 0 20px;
+    }
   }
 
   .graphAndRegister{
@@ -255,9 +371,22 @@ body, html {
     z-index: 1;
 
     .header{
-      height: 80px;
       padding: 25px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+      .col-xs-12 {
+        @media(max-width:767px){
+          padding-bottom: 20px;
+        }
+      }
+
+      .btn.btn-black {
+        @media(max-width:767px){
+          width: 100% !important;
+        }
+      }
+
+
     }
 
     #slider, .simulation {
@@ -291,7 +420,6 @@ body, html {
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
       height: 250px;
       padding: 22px;
-      //background-image: image-url('bgEnterprise.png');
       background-repeat: no-repeat;
       background-position: 32px;
       @media (max-width: 767px) { font-size: 17px; }
@@ -303,7 +431,17 @@ body, html {
         font-size: 20px;
         max-width: 200px;
         color: #494646;
+
+        @media(max-width:767px){
+          height: 75px;
+          font-size: 15px;
+          max-width: none;
+          color: rgb(117, 117, 117);
+          font-style: italic;
+        }
+
       }
+
     }
 
   }
@@ -476,6 +614,14 @@ body, html {
     color: #FFF;
     font-size: 20px;
 
+    @media(max-width:767px){
+      padding: 10px 15px;
+    }
+
+    &:hover {
+      color:#FFF;
+    }
+
     i{
       color: #F15929;
       margin-right: 10px;
@@ -485,6 +631,10 @@ body, html {
   &.btn-black {
     background-color: #404143;
     color:#FFF;
+
+    &:hover {
+      color:#FFF;
+    }
   }
 
   &.btn-link {
@@ -715,6 +865,7 @@ body, html {
         padding-left: 0;
         padding-right: 0;
       }
+
     }
   }
 }
@@ -743,4 +894,42 @@ body, html {
 }
 .mtIndustry{
   background-image: image-url('mt_industry.jpg');
+}
+
+.fixedOnTop{
+  position:fixed !important;
+  background-color: #000 !important;
+  top:0px !important;
+  z-index: 2;
+
+  -webkit-transition: background 2s ease;
+  -moz-transition: background 2s ease;
+  -ms-transition: background 2s ease;
+  -o-transition: background 2s ease;
+  transition: background 2s ease;
+}
+
+.regAndSim{
+  @media(max-width:767px){
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.forTip{
+  @media(max-width:767px){
+    padding: 27px 0 !important;
+  }
+}
+
+.xs-mid{
+  @media(max-width:767px){
+    max-width: 50%;
+  }
+}
+
+.xs-80{
+  @media(max-width:767px){
+    max-width: 80%;
+  }
 }
