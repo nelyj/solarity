@@ -1,8 +1,7 @@
 =render 'layouts/header'
 .middletron.mtIndustry
   .header
-    .container
-      =render 'layouts/main_menu'
+    =render 'layouts/main_menu'
   .wrapper
     .container
       %h1 Industrias y gobierno
@@ -33,12 +32,12 @@
 
     <br>
     %p.bold.midWidth Contáctanos para una cotización y para obtener información adicional de como opera
-    =image_tag "arrow.png", class:'pull-right mgTop70'
+    =image_tag "arrow.png", class:'pull-right mgTop70 hidden-xs'
 
 
   .col-lg-6.intPages
     =render 'layouts/register_form'
 
-.footerContent.intPages
+.footerContent.intPages.hidden-xs
   =render 'layouts/footer_menu'
 

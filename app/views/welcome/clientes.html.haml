@@ -1,8 +1,7 @@
 =render 'layouts/header'
 .middletron.mtIndustry
   .header
-    .container
-      =render 'layouts/main_menu'
+    =render 'layouts/main_menu'
   .wrapper
     .container
       %h1 Industrias y gobierno
@@ -84,10 +83,10 @@
     .col-lg-6
       %h1 ¿Te interesa?
       %p.midWidth Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
-      =image_tag "arrow.png", class:'pull-right mgTop70'
+      =image_tag "arrow.png", class:'pull-right mgTop70 hidden-xs'
     .col-lg-6
       =render "layouts/just_register_form"
 
-.footerContent.intPages
+.footerContent.intPages.hidden-xs
   =render 'layouts/footer_menu'
 

@@ -1,8 +1,7 @@
 =render 'layouts/header'
 .middletron.mtHome
   .header
-    .container
-      =render 'layouts/main_menu'
+    =render 'layouts/main_menu'
   .wrapper
     .container
       %h1 Para su hogar
@@ -18,12 +17,12 @@
     <br>
     %h1 ¿Te interesa?
     %p.bold.midWidth Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
-    =image_tag "arrow.png", class:'pull-right mgTop70'
+    =image_tag "arrow.png", class:'pull-right mgTop70 hidden-xs'
 
 
   .col-lg-6.intPages
     =render 'layouts/register_form'
 
-.footerContent.intPages
+.footerContent.intPages.hidden-xs
   =render 'layouts/footer_menu'
 
