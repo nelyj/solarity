@@ -19,6 +19,7 @@
 
 $(document).on('ready page:load', function () {
 
+    /*
     //definicion tramos
     var strJSONTramosResindencial = '[ \
         { "begin":0,  "end":16,  "text": "Entre $250.000  y ? "     , "tip":"Tu cuenta eléctrica esta fuera de control!"},\
@@ -27,24 +28,24 @@ $(document).on('ready page:load', function () {
         { "begin":51, "end":67,  "text": "Entre $100.000 y $150.000", "tip":"Te podemos ayudar a bajar esta tarifa"},\
         { "begin":68, "end":84,  "text": "Entre $50.000 y $99.000"  , "tip":"Podemos ayudarte a ahorrar, contáctanos!"},\
         { "begin":85, "end":100, "text": "Entre $1 y $50.000"       , "tip":"Mientras más gastas más te podemos ayudar a ahorrar"}\
-      ]';
+      ]';*/
 
     var strJSONTramosIndustrial = '[ \
-        { "begin":0,  "end":25,  "text": "Entre 10MM y ? " , "tip":"Puede ser que te podamos ayudar a bajar tus costos en electricidad!"},\
-        { "begin":26, "end":50,  "text": "Entre 5MM y 10MM", "tip":"Quizás la electricidad es un costo muy alto para tu negocio, te podemos ayudar!"},\
-        { "begin":51, "end":75,  "text": "Entre 1MM y 5MM" , "tip":"Podemos ayudarte a bajar tus costos en electricidad, contactanos!"},\
-        { "begin":76, "end":100, "text": "Entre 500 y 1MM" , "tip":"Mientras más gastas más te podemos ayudar a ahorrar"}\
+        { "begin":0,  "end":150,  "text": "Entre 10MM y ? " , "tip":"Puede ser que te podamos ayudar a bajar tus costos en electricidad!"},\
+        { "begin":151, "end":300,  "text": "Entre 5MM y 10MM", "tip":"Quizás la electricidad es un costo muy alto para tu negocio, te podemos ayudar!"},\
+        { "begin":301, "end":450,  "text": "Entre 1MM y 5MM" , "tip":"Podemos ayudarte a bajar tus costos en electricidad, contactanos!"},\
+        { "begin":451, "end":600, "text": "Entre 500 y 1MM" , "tip":"Mientras más gastas más te podemos ayudar a ahorrar"}\
       ]';
 
     jsonTramos = JSON.parse(strJSONTramosIndustrial);
 
 
   $("#slider").noUiSlider({
-    start: 50,
+    start: 100,
     orientation: "vertical",
     range: {
       'min': 0,
-      'max': 100
+      'max': 600
     },
     serialization: {
       format: {
@@ -132,7 +133,9 @@ function getInfoTramo(valor){
 
 function updateInfoSlider(){
   var infoTramo=getInfoTramo($("#slider").val());
-   $('#infoSlider').html(infoTramo[0]);
+   //$('#infoSlider').html(infoTramo[0]);
+   $('#infoSlider').html('$ '+sepMiles($("#slider").val()) +'MM Mensual <br> $ '+sepMiles($("#slider").val()*12)+'MM Anual');
+
    $('#tip').html(infoTramo[1]);
 
    //var colorLabel='hsla('+$("#slider").val()+',50%,45%,1)';
@@ -140,6 +143,18 @@ function updateInfoSlider(){
    //$('#infoSlider').css('background-color',colorLabel);
    //$('#infoSlider').css('border-color',colorLabel);
    //$('.noUi-handle').css('background-color',colorLabel).css('border-color', borderColorHandle);
-   $('#infoSlider').css('top',(($("#slider").val()*2)-13)+'px');
+   //$('#infoSlider').css('top',(($("#slider").val()*2)-13)+'px');
+   $('#infoSlider').css('top',(( ($("#slider").val()/6) *2)-22)+'px');
+}
+
+
+
+function sepMiles(num){
+  var num = num.toString().replace(/\./g,'');
+  if(!isNaN(num)){
+    num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.');
+    num = num.split('').reverse().join('').replace(/^[\.]/,'');
+  }
+  return num;
 }
 

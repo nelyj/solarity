@@ -408,15 +408,19 @@ body, html {
       position: absolute;
       margin-left: 38px;
       //background-color: rgba(0,0,0,0.7);
-      background-color: #404143;
+      //background-color: #404143;
+      background-color:rgba(64, 65, 67, 0.84);
 
-      border-radius: 2px;
-      padding: 5px 10px;
+      //border-radius: 2px;
+      border-radius: 10px;
+      //padding: 5px 10px;
+      padding: 13px 20px;
       color:#FFF;
       top:-15px;
       font-size: 14px;
       //border-color:rgba(0,0,0,0.7);
-      border-color:#404143;
+      //border-color:#404143;
+      border-color:rgba(64, 65, 67, 0.84);
       white-space: nowrap;
       &:before{
         content: ' ';
