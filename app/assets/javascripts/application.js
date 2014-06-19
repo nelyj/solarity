@@ -61,6 +61,7 @@ $(document).on('ready page:load', function () {
   });
 
 
+  /*
   $("#home").click(function () {
     $('.simulation').removeClass('bgIndustry').addClass('bgHome');
     $(this).toggleClass('btn-link btn-black');
@@ -76,7 +77,7 @@ $(document).on('ready page:load', function () {
      $('#home').toggleClass('btn-black btn-link');
      jsonTramos = JSON.parse(strJSONTramosIndustrial);
      updateInfoSlider();
-  });
+  });*/
 
 
   $('#registerBtn').on('shown.bs.popover', function() {
@@ -91,7 +92,6 @@ $(document).on('ready page:load', function () {
 
 });
 
-
 function simpleScrollSpy(positionY){
   $(window).scroll(function(){
 
@@ -102,13 +102,14 @@ function simpleScrollSpy(positionY){
     }
 
 
-    /*
+ /*
     var mq = window.matchMedia( "(max-width: 767px)" );
     if (mq.matches) {
-      if  ($(window).scrollTop() >= 320){
-        $('.jumbotron .footerContent').addClass('fixedOnTop');
-      }else {
-        $('.jumbotron .footerContent').removeClass('fixedOnTop');
+      if  ($(window).scrollTop() > 0){
+        if ($('.navbar-collapse').hasClass('collapse','in')){
+          $('.navbar-collapse').collapse('hide');
+          $('.navbar-collapse').removeClass('collapse','in');
+        }
       }
     }*/
 
@@ -134,11 +135,11 @@ function updateInfoSlider(){
    $('#infoSlider').html(infoTramo[0]);
    $('#tip').html(infoTramo[1]);
 
-   var colorLabel='hsla('+$("#slider").val()+',50%,45%,1)';
-   var borderColorHandle='hsla('+$("#slider").val()+',50%,38%,0.8)';
-   $('#infoSlider').css('background-color',colorLabel);
-   $('#infoSlider').css('border-color',colorLabel);
-   $('.noUi-handle').css('background-color',colorLabel).css('border-color', borderColorHandle);
+   //var colorLabel='hsla('+$("#slider").val()+',50%,45%,1)';
+   //var borderColorHandle='hsla('+$("#slider").val()+',50%,38%,0.8)';
+   //$('#infoSlider').css('background-color',colorLabel);
+   //$('#infoSlider').css('border-color',colorLabel);
+   //$('.noUi-handle').css('background-color',colorLabel).css('border-color', borderColorHandle);
    $('#infoSlider').css('top',(($("#slider").val()*2)-13)+'px');
 }
 

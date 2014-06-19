@@ -1,4 +1,3 @@
-=render 'layouts/header'
 .jumbotron
   .bodyContent
     .header
@@ -10,20 +9,15 @@
 
   .footerContent
     .container
-      .col-lg-4.col-xs-12
+      .col-lg-12.col-xs-12
 
-        %a.btn.btn-black-trans.hidden-xs{href:'#register_form'}
+        %a.btn.btn-black-trans.hidden-xs.pull-right{href:'#register_form'}
           %i.fa.fa-file-text
-          Cotize gratis con Solarity
+          Cotize con nosotros
 
         %a.btn.btn-black-trans.hidden-lg{href:'#register_form'}
           %i.fa.fa-file-text
           Cotize gratis
-
-      .col-lg-8.hidden-xs
-        %p
-          %i.fa.fa-chevron-circle-left
-          Atenderemos su requerimiento o inquietud sin ningún compromiso.
 
 .container.main
   .col-lg-6
@@ -53,6 +47,6 @@
   .footerContent.hidden-xs
     =render 'layouts/footer_menu'
 =render 'layouts/footer_mobile'
-
+=render 'layouts/header'
 
 

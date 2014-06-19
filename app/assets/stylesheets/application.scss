@@ -47,7 +47,7 @@ body, html {
 
 }
 
-.navbar-fixed-top{
+.nav-bottom {
   line-height: 50px;
   color: #FFF;
 
@@ -304,7 +304,20 @@ body, html {
   .footerContent {
     position: absolute;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, rgba(0,0,0,0)),
+      color-stop(1, rgba(0,0,0,0.7))
+    );
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+
     margin: 0 -30px;
     bottom: 0;
     height: 145px;
@@ -312,19 +325,6 @@ body, html {
 
     @media(max-width:767px){
       height: 145px;
-      background-color: transparent;
-      background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, rgba(0,0,0,0)),
-        color-stop(1, rgba(0,0,0,0.7))
-      );
-      background-image: -o-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
-      background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
-      background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
-      background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
     }
 
     .container {
@@ -368,7 +368,7 @@ body, html {
 
   .graphAndRegister{
     display: inline-block;
-    background-color: #F5F5F5;
+    background-color: #F15929;
     color:#404143;
     position: relative;
     top: 28px;
@@ -377,6 +377,11 @@ body, html {
     .header{
       padding: 25px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      color:#fff;
+
+      @media(max-width:767px){
+        padding: 20px 20px 5px 20px !important;
+      }
 
       .col-xs-12 {
         @media(max-width:767px){
@@ -400,13 +405,16 @@ body, html {
     #infoSlider{
       position: absolute;
       margin-left: 38px;
-      background-color: rgba(0,0,0,0.50);
+      //background-color: rgba(0,0,0,0.7);
+      background-color: #404143;
+
       border-radius: 2px;
       padding: 5px 10px;
       color:#FFF;
       top:-15px;
       font-size: 14px;
-      border-color:rgba(0,0,0,0.50);
+      //border-color:rgba(0,0,0,0.7);
+      border-color:#404143;
       white-space: nowrap;
       &:before{
         content: ' ';
@@ -420,7 +428,7 @@ body, html {
     }
 
     .simulation {
-      border-top: 1px solid #FFF;
+      border-top: 1px solid #FF7000;
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
       height: 250px;
       padding: 22px;
@@ -434,13 +442,15 @@ body, html {
         height: 200px;
         font-size: 20px;
         max-width: 200px;
-        color: #494646;
+
+        font-weight: 600;
+        font-style: italic;
+        color: rgba(66, 46, 46, 0.35);
 
         @media(max-width:767px){
           height: 75px;
           font-size: 15px;
           max-width: none;
-          color: rgb(117, 117, 117);
           font-style: italic;
         }
 
@@ -456,6 +466,9 @@ body, html {
   margin-bottom: 50px;
 
   .register {
+    background-color: #F15929;
+    color:#404143;
+
     @media(max-width:767px){
       padding:15px 15px !important;
     }
@@ -475,7 +488,7 @@ body, html {
 }
 
 .register {
-   border-top: 1px solid #FFF;
+   border-top: 1px solid #FF7000;
    padding: 15px 25px;
 
    .fields {
@@ -531,7 +544,7 @@ body, html {
 
 
 .bigFooter {
-  height: 810px;
+  height: 700px;
   background-image: image-url('bgFooter.jpg');
   position: relative;
 
@@ -662,7 +675,7 @@ body, html {
 
 }
 
-
+/*
 .noUi-base {
   background-image: -webkit-gradient(
   linear,
@@ -681,7 +694,7 @@ body, html {
 .noUi-handle {
   box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.6), inset 0 1px 7px rgba(235, 235, 235, 0.6), 0 3px 6px -3px rgba(187, 187, 187, 0.6);
 }
-
+*/
 
 .middletron {
   height: 270px;
@@ -767,6 +780,8 @@ body, html {
 
     @media(max-width:767px){
       padding-top: 45px;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
 
     .graphAndRegister{
@@ -868,8 +883,8 @@ body, html {
   .video{
     iframe {
       @media(max-width:767px){
-        width: 260px !important;
-        height: 146px !important;
+        width: 290px !important;
+        height: 163px !important;
       }
     }
   }
@@ -936,10 +951,8 @@ body, html {
   background-image: image-url('mt_industry.jpg');
 }
 
-.fixedOnTop{
-  position:fixed !important;
+.nav-bottom {
   background-color: #000 !important;
-  top:0px !important;
   z-index: 2;
 
   -webkit-transition: background 2s ease;
@@ -1105,4 +1118,11 @@ body, html {
       font-size: 30px;
     }
   }
+}
+
+.orange {
+  background-color: #F15929;
+  color:#404143;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }

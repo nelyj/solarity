@@ -1,4 +1,3 @@
-=render 'layouts/header'
 .middletron.mtHome
   .header
     =render 'layouts/main_menu'
@@ -80,7 +79,7 @@
       %h1 ¿Te interesa?
       %p.midWidth Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
       =image_tag "arrow.png", class:'pull-right mgTop70 hidden-xs'
-    .col-lg-6
+    .col-lg-6.orange
       =render "layouts/just_register_form"
 
 .footerContent.intPages.hidden-xs
@@ -88,3 +87,5 @@
 
 .intPages
   =render 'layouts/footer_mobile'
+
+=render 'layouts/header'
