@@ -50,6 +50,7 @@ body, html {
 .nav-bottom {
   line-height: 50px;
   color: #FFF;
+  margin-bottom: 0px !important;
 
   @media(max-width:767px){
     display: none;
@@ -1150,4 +1151,12 @@ p.galText {
   color:#404143;
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+
+.largeArrow {
+  position: relative;
+  margin-top: -206px !important;
+  margin-right: -125px;
+  padding-bottom: 35px;
 }
