@@ -130,13 +130,14 @@ body, html {
   .header{
     margin-left: -30px;
     margin-right: -30px;
-    margin-top: -48px;
+    margin-top: -80px;
 
     @media(max-width:767px){
       position: fixed;
       width: 100%;
       z-index: 2;
       background: rgba(0, 0, 0, 0.83);
+      margin-top: -48px;
     }
 
     .navbar{
@@ -698,21 +699,31 @@ body, html {
 
 .middletron {
   height: 270px;
-  margin-top: 52px;
+  margin-top: 34px;
   margin-left: -30px;
   margin-right: -30px;
   padding: 0;
 
-  .header{
+  @media(max-width:767px){
+    margin-top: 61px !important;
+  }
 
+
+  .header{
     background-color: rgba(255,255,255,0.7);
+    margin-top: -34px;
+
 
     .navbar{
       border-radius: 0;
       border: none;
-      min-height: 90px;
+      //min-height: 90px;
       background-color: transparent;
       color:#414243;
+
+
+      padding-top: 18px;
+      min-height: 106px;
 
       .container {
         margin-top: 25px;
@@ -757,7 +768,18 @@ body, html {
     padding-top: 30px;
   }
 
+  &.mtIndustry{
+    h1 {
+      @media(max-width:767px){
+        padding-top: 40px;
+      }
+    }
+  }
+
 }
+
+
+
 
 
 .intPages {
@@ -909,6 +931,9 @@ body, html {
   }
 }
 
+p.galText {
+ font-size: 14px;
+}
 
 .navbar{
   .container {
