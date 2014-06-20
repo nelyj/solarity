@@ -245,6 +245,12 @@ body, html {
 
       }
 
+      button.navbar-toggle{
+         @media(max-width:767px){
+            margin-top: 4px;
+         }
+      }
+
     }
   }
 
@@ -1164,3 +1170,14 @@ p.galText {
   margin-right: -125px;
   padding-bottom: 35px;
 }
+
+img.logo{
+  height: 46px;
+  @media(max-width:767px){
+    height: 30px;
+  }
+  &.gray{
+    height: 80px;
+  }
+}
+
