@@ -31,7 +31,7 @@ $(document).on('ready page:load', function () {
       ]';*/
 
     var strJSONTramosIndustrial = '[ \
-        { "begin":0,  "end":150,  "text": "Entre 10MM y ? " , "tip":"Puede ser que te podamos ayudar a bajar tus costos en electricidad!"},\
+        { "begin":0,  "end":150,  "text": "Entre 10MM y ? " , "tip":"Estás gastando demasiado, seguro podemos hacer algo por ti!"},\
         { "begin":151, "end":300,  "text": "Entre 5MM y 10MM", "tip":"Quizás la electricidad es un costo muy alto para tu negocio, te podemos ayudar!"},\
         { "begin":301, "end":450,  "text": "Entre 1MM y 5MM" , "tip":"Podemos ayudarte a bajar tus costos en electricidad, contactanos!"},\
         { "begin":451, "end":600, "text": "Entre 500 y 1MM" , "tip":"Mientras más gastas más te podemos ayudar a ahorrar"}\
