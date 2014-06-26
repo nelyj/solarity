@@ -1,0 +1,96 @@
+
+.middletron.mtIndustry
+  .header
+    =render 'layouts/main_menu'
+  .wrapper
+    .container
+      %h1 Industrias y gobierno
+
+.container.main.intPages
+  .col-lg-6
+    %h1.first Nuestros clientes
+
+    %p.bold Falabella
+    %p “...En incontables ocasiones hemos implementado proyectos para hacer más eficiente nuestra operación, puedo decir sin temor a equivocrame que las soluciones de Solarity son las de mayor impacto positivo en nuestros reportes de éxito...”
+    %p.text-right.italic
+      %span.bold Rigoberto Urán
+      \- VP de innovación Falabella LatAm
+
+    %p.bold Copec
+    %p “...Estamos pensando seriamente en migrar nuestro negocio a la energía solar gracias a Solarity...”
+    %p.text-right.italic
+      %span.bold Nairo Quintana
+      \- Gerente  de implementaciones Chile
+
+    %p.bold Cencosud
+    %p “Bajamos nuestros gastos de energía en un 45% gracias a Solarity, ¡un 7 en servicio y asesoría!”
+    %p.text-right.italic
+      %span.bold Luis Fernando Muriel
+      \- Presidente Cencosud
+
+    %p.bold KFC
+    %p “Implementar las soluciones de Solarity en nuestros centros de distribución de pollos nos reporta un ahorro de más de 35% en nuestros gastos fijos mes a mes”
+    %p.text-right.italic
+      %span.bold Cecilia Baena
+      \- Directora de procesos KFC Chile
+
+
+  .col-lg-6.intPages
+    %h4 Videos
+    .row.videos
+      .col-lg-5
+        .video
+          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/KiDjcKXlIuM?autoplay=0&showinfo=0&controls=0", width: "210"}
+      .col-lg-7
+        %p.bold Caso de estudio: Casa de la Moneda
+        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+
+    .row.videos
+      .col-lg-5
+        .video
+          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/5AnMsyIT26A?autoplay=0&showinfo=0&controls=0", width: "210"}
+      .col-lg-7
+        %p.bold Caso de estudio: Movistar
+        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+
+    .row.videos
+      .col-lg-5
+        .video
+          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/LJlpX5iukuI?autoplay=0&showinfo=0&controls=0", width: "210"}
+      .col-lg-7
+        %p.bold Caso de estudio: Empresas Madereras de Chile
+        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+
+    %h4 Galería de instalaciones
+    %p.galText Explore la gran cantidad de espacios en los que hemos logrado desarrollar soluciones inteligentes y eficientes, ¿preocupado por su caso particular? las siguientes imágenes son instalaciones reales hechas por nuestros profesionales en todo Chile.
+
+    .gallery
+      .row
+        =image_tag "gal_1.png"
+        =image_tag "gal_2.png"
+        =image_tag "gal_3.png"
+        =image_tag "gal_4.png"
+        =image_tag "gal_5.png"
+      .row
+        =image_tag "gal_6.png"
+        =image_tag "gal_7.png"
+        =image_tag "gal_8.png"
+        =image_tag "gal_9.png"
+        =image_tag "gal_10.png"
+
+.container.bigRegister
+  .row
+    .col-lg-6
+      %h1 ¿Te interesa?
+      %p.midWidth Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
+      =image_tag "arrow.png", class:'pull-right mgTop70 hidden-xs'
+    .col-lg-6
+      =render "layouts/just_register_form"
+
+.footerContent.intPages.hidden-xs
+  =render 'layouts/footer_menu'
+
+.intPages
+  =render 'layouts/footer_mobile'
+
+=render 'layouts/header’
