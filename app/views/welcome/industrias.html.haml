@@ -44,7 +44,8 @@
 
 
   .col-lg-6.intPages
-    =image_tag "temp.png", class:'fullWidth'
+    =link_to "temp.png" do
+      =image_tag "temp.png", class:'fullWidth'
     =render 'layouts/register_form'
 
 .footerContent.intPages.hidden-xs
