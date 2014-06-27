@@ -24,6 +24,8 @@ class WelcomeController < ApplicationController
 
   def testimonios
   end
+  def equipo
+  end
 
   private
     def empty_client
