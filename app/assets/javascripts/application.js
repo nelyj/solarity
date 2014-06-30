@@ -29,11 +29,11 @@ $(document).on('ready page:load', function () {
         { "begin":68, "end":84,  "text": "Entre $50.000 y $99.000"  , "tip":"Podemos ayudarte a ahorrar, contáctanos!"},\
         { "begin":85, "end":100, "text": "Entre $1 y $50.000"       , "tip":"Mientras más gastas más te podemos ayudar a ahorrar"}\
       ]';*/
-
+ 
     var strJSONTramosIndustrial = '[ \
-        { "begin":0,  "end":150,  "text": "Entre 10MM y ? " , "tip":"Estás gastando demasiado, seguro podemos hacer algo por ti!"},\
-        { "begin":151, "end":300,  "text": "Entre 5MM y 10MM", "tip":"Quizás la electricidad es un costo muy alto para tu negocio, te podemos ayudar!"},\
-        { "begin":301, "end":450,  "text": "Entre 1MM y 5MM" , "tip":"Podemos ayudarte a bajar tus costos en electricidad, contactanos!"},\
+        { "begin":0,  "end":150,  "text": "Entre 10Mill y ? " , "tip":"Estás gastando demasiado, seguro podemos hacer algo por ti!"},\
+        { "begin":151, "end":300,  "text": "Entre 5Mill y 10Mill", "tip":"Quizás la electricidad es un costo muy alto para tu negocio, te podemos ayudar!"},\
+        { "begin":301, "end":450,  "text": "Entre 1Mill y 5Mill" , "tip":"Podemos ayudarte a bajar tus costos en electricidad, contactanos!"},\
         { "begin":451, "end":600, "text": "Entre 500 y 1MM" , "tip":"Mientras más gastas más te podemos ayudar a ahorrar"}\
       ]';
 
