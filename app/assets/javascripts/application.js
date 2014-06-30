@@ -31,10 +31,10 @@ $(document).on('ready page:load', function () {
       ]';*/
  
     var strJSONTramosIndustrial = '[ \
-        { "begin":0,  "end":15,  "text": "Entre 10Mill y ? " , "tip":"Estás gastando demasiado, seguro podemos hacer algo por ti!"},\
-        { "begin":15.1, "end":30,  "text": "Entre 5Mill y 10Mill", "tip":"Quizás la electricidad es un costo muy alto para tu negocio, te podemos ayudar!"},\
-        { "begin":30.1, "end":45,  "text": "Entre 1Mill y 5Mill" , "tip":"Podemos ayudarte a bajar tus costos en electricidad, contactanos!"},\
-        { "begin":45.1, "end":60, "text": "Entre 500 y 1MM" , "tip":"Mientras más gastas más te podemos ayudar a ahorrar"}\
+        { "begin":0,  "end":150,  "text": "Entre 10Mill y ? " , "tip":"Estás gastando demasiado, seguro podemos hacer algo por ti!"},\
+        { "begin":151, "end":300,  "text": "Entre 5Mill y 10Mill", "tip":"Quizás la electricidad es un costo muy alto para tu negocio, te podemos ayudar!"},\
+        { "begin":301, "end":450,  "text": "Entre 1Mill y 5Mill" , "tip":"Podemos ayudarte a bajar tus costos en electricidad, contactanos!"},\
+        { "begin":451, "end":600, "text": "Entre 500 y 1MM" , "tip":"Mientras más gastas más te podemos ayudar a ahorrar"}\
       ]';
 
     jsonTramos = JSON.parse(strJSONTramosIndustrial);
