@@ -235,7 +235,7 @@ body, html {
               margin: 0 !important;
               border-left: 3px solid transparent;
               &:hover {
-                border-left: rgb(232,83,34);
+                border-left: 3px solid #F15929;
               }
             }
           }
@@ -376,7 +376,7 @@ body, html {
 
   .graphAndRegister{
     display: inline-block;
-    background-color: rgb(232,83,34);
+    background-color: #F15929;
     color:#404143;
     position: relative;
     top: 28px;
@@ -478,7 +478,7 @@ body, html {
   margin-bottom: 50px;
 
   .register {
-    background-color: #EE7C47;
+    background-color: #F15929;
     color:#404143;
 
     @media(max-width:767px){
@@ -635,7 +635,7 @@ body, html {
             margin: 0 !important;
             border-left: 3px solid transparent;
             &:hover {
-              border-left: rgb(232,83,34);
+              border-left: 3px solid #F15929;
             }
           }
         }
@@ -667,7 +667,7 @@ body, html {
     }
 
     i{
-      color: rgb(232,83,34);
+      color: #F15929;
       margin-right: 10px;
     }
   }
@@ -763,7 +763,7 @@ body, html {
               margin: 0 !important;
               border-left: 3px solid transparent;
               &:hover {
-                border-left: rgb(232,83,34);
+                border-left: 3px solid #F15929;
               }
             }
           }
@@ -892,7 +892,7 @@ body, html {
           margin: 0 !important;
           border-left: 3px solid transparent;
           &:hover {
-            border-left: rgb(232,83,34);
+            border-left: 3px solid #F15929;
           }
         }
       }
