@@ -22,6 +22,8 @@ gem 'haml-rails'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~>3.1.1'
 gem 'axlsx_rails'
+gem 'nokogiri', '1.6.1'
+gem 'newrelic_rpm'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
