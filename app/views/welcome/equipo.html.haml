@@ -11,12 +11,63 @@
     %h1.first Visión
     %p Solarity busca mejorar el acceso energías más limpias y baratas para la sociedad.
 
-    %p Algún día cercano al menos un 30% de la generación eléctrica será solar, la mejor solución tiene que venir de micro-generación distribuida, el tener grandes extensiones de terreno para poner paneles no será una opción valida. Nosotros queremos ser parte de está revolución y contribuir en dejar el planeta mejor que como lo encontramos.
+    %p Creemos que en algunos años, al menos un 30% de la generación eléctrica será solar. La mejor solución tiene que venir de la micro-generación distribuida, el tener grandes extensiones de terreno para poner paneles no será una opción valida. Nosotros queremos ser parte de está revolución y contribuir en dejar el planeta mejor que como lo encontramos.
 
     %p.bold Equipo
 
     %p Desde el momento en que tu negocio empiece a producir energía solar PV, tu cuenta de electricidad va disminuir. Además, como se espera que las tarifas eléctricas sigan subiendo, tu ahorro irá en aumento.
 
+  .col-lg-6.intPages
+    %h4 Videos
+    .row.videos
+      .col-lg-5
+        .video
+          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/KiDjcKXlIuM?autoplay=0&showinfo=0&controls=0", width: "210"}
+      .col-lg-7
+        %p.bold Caso de estudio: Casa de la Moneda
+        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+
+    .row.videos
+      .col-lg-5
+        .video
+          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/5AnMsyIT26A?autoplay=0&showinfo=0&controls=0", width: "210"}
+      .col-lg-7
+        %p.bold Caso de estudio: Movistar
+        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+
+    .row.videos
+      .col-lg-5
+        .video
+          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/LJlpX5iukuI?autoplay=0&showinfo=0&controls=0", width: "210"}
+      .col-lg-7
+        %p.bold Caso de estudio: Empresas Madereras de Chile
+        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+
+    %h4 Galería de instalaciones
+    %p.galText Explore la gran cantidad de espacios en los que hemos logrado desarrollar soluciones inteligentes y eficientes, ¿preocupado por su caso particular? las siguientes imágenes son instalaciones reales hechas por nuestros profesionales en todo Chile.
+
+    .gallery
+      .row
+        =image_tag "gal_1.png"
+        =image_tag "gal_2.png"
+        =image_tag "gal_3.png"
+        =image_tag "gal_4.png"
+        =image_tag "gal_5.png"
+      .row
+        =image_tag "gal_6.png"
+        =image_tag "gal_7.png"
+        =image_tag "gal_8.png"
+        =image_tag "gal_9.png"
+        =image_tag "gal_10.png"
+
+.container.bigRegister
+  .row
+    .col-lg-6
+      %h1 ¿Te interesa?
+      %p.midWidth Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
+      =image_tag "arrow.png", class:'pull-right mgTop70 hidden-xs'
+    .col-lg-6.orange
+      =render "layouts/just_register_form"
 
 .footerContent.intPages.hidden-xs
   =render 'layouts/footer_menu'
