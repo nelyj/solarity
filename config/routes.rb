@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get '/testimonios' => 'welcome#testimonios'
   get '/equipo' => 'welcome#equipo'
   get '/blog' => 'welcome#blog'
-  get 'googleead1499f6fa887a5.html' => 'welcome#googleead1499f6fa887a5.html'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
