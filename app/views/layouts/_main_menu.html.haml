@@ -10,25 +10,12 @@
         =image_tag "logo.svg", class:'logo hidden-xs'
         =image_tag "logoWhite.svg", class:'logo hidden-lg white'
 
-    .navbar-collapse.collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li.dropdown
-          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-            Comercial e Industrial
-            %span.caret
-          %ul.dropdown-menu
-            %li
-              =link_to "Ahorro", ahorro_path
-            %li
-              =link_to "Productos y Servicios", productos_path
-            %li
-              =link_to "¿Cómo funciona?", industrias_path
         %li
           <a href="http://www.solarityenergia.com/ahorro" >Ahorro</a> 
         %li
           <a href="http://www.solarityenergia.com/productos" >Productos</a> 
         %li
-          <a href="http://www.solarityenergia.com/industrias" >Como Funciona</a>
+          <a href="http://www.solarityenergia.com/industrias" >Cómo Funciona</a>
         %li
           %a{href: "/#why"} ¿Por qué Solarity?
         %li
