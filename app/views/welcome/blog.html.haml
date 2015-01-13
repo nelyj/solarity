@@ -1,4 +1,4 @@
-.middletron.mtHome
+.middletron.mtIndustry
   .header
     =render 'layouts/main_menu'
   .wrapper
@@ -7,80 +7,19 @@
 
 .container.main.intPages
   .col-lg-6
-    %h1.first Dejemos que el sol entre en nuestras casas
+  
+    %h1.first Dejemos que el sol entre en nuestas casas
+    %p El Ministro de Energía, Máximo Pacheco, visitó a la Comisión de Minería y Energía del Senado y sus palabras fueron, por decir lo menos, de mucha Potencia. En pocas palabras, la industria de la energía, electricidad y combustibles, debe cambiar. La estrechez en oferta y altos precios tienen a nuestro país en apuros. Como dijo, el escenario para los próximos años no será de “apagón”, sino que de “pagón”.  Dio señales claras por donde vienen los distintos frentes de trabajo para revertir esta situación:  Primero, mejorar el trabajo regulatorio de este ministerio como para, por ejemplo, introducir cambios en las licitaciones de distribuidoras de modo de aumentar la competencia y permitir la entrada de nuevos actores más pequeños. Segundo, buscarán agilizar la manera de conectar más ERNC (Energías Renovables No Convencionales) a la redes y de aumentar la eficiencia energética en todo nivel, desde residencial a industrial. Y tercero, buscarán traer más GNL (Gas Natural Licuado) desde Estados Unidos y algunos países vecinos, para bajar sus costos y romper los monopolios del gas.
 
-    %p.bold Alba Cárdenas
-    %p “Solarity hizo que mi boleta de electricidad bajara hasta ser casi imperceptible, los adoro!”
-    %p.text-right.italic
-      %span.bold La Dehesa
+    %p ¿Separemos la discusión? Está claro que se debe traer más GNL y más barato para bajar la cuenta del gas. Pero ¿por qué en la discusión eléctrica no invitamos expresamente a la fuente de energía que tenemos aquí y ahora, económica, y que nos asegura una independencia energética? La energía solar fotovoltaica. Si centramos demasiado la solución a nuestros problemas en traer más GNL desde Estados Unidos, Argentina (No aprendimos la lección) y Perú (No queremos imaginar otro conflicto limítrofe!) , es probable que bajen los precios de la electricidad pero, mantendremos muchos de los problemas que nos aquejan hoy: dependencia energética desde el exterior, exposición a problemas geopolíticos y volatilidad de precios, monopolios en el sector eléctrico, etc. 
 
-    %p.bold Jorge Rodriguez
-    %p “...Estamos pensando seriamente en migrar nuestro negocio a la energía solar gracias a Solarity...”
-    %p.text-right.italic
-      %span.bold Las Condes
+    %p Como Solarity estamos convencidos que el suministro solar fotovoltaico tiene todos los atributos para aportar una mayor y mejor competencia, modernizar el mercado eléctrico, romper los monopolios y para entregar un ahorro inteligente a todos. La tecnología está, las competencias locales están. Solo falta, como muy bien dijo el Ministro, un poco de “pachorra” para destrabar su ingreso a nuestras casas e industrias. El Futuro solar es aquí y ahora.
 
-    %p.bold José Lizana
-    %p “Bajamos nuestros gastos de energía en un 45% gracias a Solarity, ¡un 7 en servicio y asesoría!”
-    %p.text-right.italic
-      %span.bold Santiago
-
-    %p.bold Ricardo Jara
-    %p “Implementar las soluciones de Solarity en nuestra casa nos reporta un ahorro de más de 35% en nuestros gastos fijos mes a mes”
-    %p.text-right.italic
-      %span.bold Ñuñoa
+    %p.bold Equipo Solarity
 
 
   .col-lg-6.intPages
-    %h4 Videos
-    .row.videos
-      .col-lg-5
-        .video
-          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/KiDjcKXlIuM?autoplay=0&showinfo=0&controls=0", width: "210"}
-      .col-lg-7
-        %p.bold Caso de estudio: Casa de la Moneda
-        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
-
-    .row.videos
-      .col-lg-5
-        .video
-          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/5AnMsyIT26A?autoplay=0&showinfo=0&controls=0", width: "210"}
-      .col-lg-7
-        %p.bold Caso de estudio: Movistar
-        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
-
-    .row.videos
-      .col-lg-5
-        .video
-          %iframe{allowfullscreen: "", frameborder: "0", height: "118", src: "//www.youtube.com/embed/LJlpX5iukuI?autoplay=0&showinfo=0&controls=0", width: "210"}
-      .col-lg-7
-        %p.bold Caso de estudio: Empresas Madereras de Chile
-        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
-
-    %h4 Galería de instalaciones
-    %p.galText Explore la gran cantidad de espacios en los que hemos logrado desarrollar soluciones inteligentes y eficientes, ¿preocupado por su caso particular? las siguientes imágenes son instalaciones reales hechas por nuestros profesionales en todo Chile.
-
-    .gallery
-      .row
-        =image_tag "gal_1.png"
-        =image_tag "gal_2.png"
-        =image_tag "gal_3.png"
-        =image_tag "gal_4.png"
-        =image_tag "gal_5.png"
-      .row
-        =image_tag "gal_6.png"
-        =image_tag "gal_7.png"
-        =image_tag "gal_8.png"
-        =image_tag "gal_9.png"
-        =image_tag "gal_10.png"
-
-.container.bigRegister
-  .row
-    .col-lg-6
-      %h1 ¿Te interesa?
-      %p.midWidth Llama a uno de nuestros consultores. Ellos responderán tus dudas. O si prefieres déjanos tus datos y te contactaremos.
-      =image_tag "arrow.png", class:'pull-right mgTop70 hidden-xs'
-    .col-lg-6.orange
-      =render "layouts/just_register_form"
+    =render 'layouts/register_form'
 
 .footerContent.intPages.hidden-xs
   =render 'layouts/footer_menu'
@@ -89,3 +28,4 @@
   =render 'layouts/footer_mobile'
 
 =render 'layouts/header'
+
