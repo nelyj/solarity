@@ -20,7 +20,6 @@ Rails.application.routes.draw do
   get '/testimonios' => 'welcome#testimonios'
   get '/equipo' => 'welcome#equipo'
   get '/blog' => 'welcome#blog'
-  get '/priority' => 'welcome#priority'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
