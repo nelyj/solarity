@@ -7,6 +7,12 @@ defaults: &defaults
   username: jlizana
   password:
 
-development: *defaults
 production: *defaults
 test: *defaults
+
+
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
