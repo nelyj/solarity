@@ -1,0 +1,18 @@
+.profile{
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.profile-bio{
+	background: red;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+.block{
+	display: block;
+}

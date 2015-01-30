@@ -19,6 +19,10 @@
 
 $(document).on('ready page:load', function () {
 
+    $('.profile').mouseenter(function(){
+      alert("asd");
+    });
+
     /*
     //definicion tramos
     var strJSONTramosResindencial = '[ \
@@ -60,7 +64,6 @@ $(document).on('ready page:load', function () {
      updateInfoSlider();
     },
   });
-
 
   /*
   $("#home").click(function () {
